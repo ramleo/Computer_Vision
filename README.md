@@ -29,9 +29,48 @@ Steps:
    - Rescaling the datasets
    - Prefetch the train and test datasets to make the training process more efficient
 5. Build CNN models
+   - Step "5" is divided into 2 ipynb files and file no. 8 contains complete steps
+   - FIRST CNN model
+      - Initializing model
+      - Checking model summary
+      - Compiling the model
+      - Fitting the model
+      - Plotting history of the model
+   - SECOND CNN model
+      - Initializing model
+      - Checking model summary
+      - Compiling the model
+      - Fitting the model
+      - Plotting history of the model
 6. Using Callbacks
+   - THIRD CNN model
+      - Initializing model
+      - Checking model summary
+      - Compiling the model
+      - Model Callbacks
+         - Early Stopping to observe if val_auc stopped improving for certain numbe of epochs, if yes then stop training
+         - Learning Rate Scheduler to improve performance and reduce training time
+         - Model Checkpoint to store best model
+         - Reduce LR on plateau to reduce learning rate if there is no improvement in val_precision
+      - Fitting the model
+      - Plotting history of the model
 7. Saved model from kaggle
+   - Had to use kaggle notebook to perform CNN training as google colab GPU hours got exhausted
+   - So downloaded the checkpoint folder from kaggle to local drive
 8. Plot Model history using subplots
+   - FOURTH CNN model
+      - Initializing model
+      - Checking model summary
+      - Compiling the model
+      - Model Callbacks
+         - Early Stopping to observe if val_auc stopped improving for certain numbe of epochs, if yes then stop training
+         - Learning Rate Scheduler to improve performance and reduce training time
+         - Model Checkpoint to store best model
+         - Reduce LR on plateau to reduce learning rate if there is no improvement in val_precision
+      - Fitting the model
+   - Plot history function
+      - Creating a separate plot_history function for reusability
+      - Calling plot_history function
 9. Performed Data Augmentation
 10. Used Transfer learning
 11. Transfer learning and Fine-tuning
